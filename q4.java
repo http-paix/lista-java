@@ -7,9 +7,10 @@ public class q4 {
         System.out.print("Digite o valor da temepratura em graus Fahrenheit: ");
         float f = tec.nextFloat();
 
+        tec.close();
+
         float c = 5 * (f - 32) / 9;
 
         System.out.println("A temperatura em graus Celsius é: " + c);
-        tec.close();
     }
 }

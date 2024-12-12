@@ -12,11 +12,10 @@ public class q1 {
 
             somatorio += nota;
         }
+        tec.close();
 
         double media = somatorio / 4;
 
         System.out.println("A média aritmética das 4 notas bimestrais do estudante é: " + media);
-
-        tec.close();
     }
 }

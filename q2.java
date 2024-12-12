@@ -9,12 +9,12 @@ public class q2 {
         System.out.print("Informe o valor do raio: ");
         float r = tec.nextFloat();
 
+        tec.close();
+
         double pi = Math.PI;
 
         double area = pi * r * r;
 
         System.out.println("Aárea do círculo é: " + area);
-
-        tec.close();
     }
 }
