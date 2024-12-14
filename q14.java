@@ -29,24 +29,20 @@ public class q14 {
         float valor = 0;
         if (pesoMorango > 5) {
             valor += pesoMorango * 2.2;
-        }
-        else {
+        } else {
             valor += pesoMorango * 2.5;
         }
 
         if (pesoMaca > 5) {
             valor += pesoMaca * 1.5;
-        }
-        else {
+        } else {
             valor += pesoMaca * 1.8;
         }
 
-
         if ((pesoMorango + pesoMaca) > 8 || valor > 25) {
-            valor = valor * 90/100;
+            valor = valor * 90 / 100;
         }
 
         System.out.printf("Valor: R$ %.2f", valor);
-        
     }
 }

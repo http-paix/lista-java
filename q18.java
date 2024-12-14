@@ -2,12 +2,12 @@
 Faça um programa que leia um número indeterminado de valores, correspondentes a notas,
 encerrando a entrada de dados quando for informado um valor igual a -1 (que não deve ser
 armazenado). Após esta entrada de dados, faça:
-a. Mostre a quantidade de valores que foram lidos;
-b. Exiba todos os valores na ordem em que foram informados, um ao lado do outro;
-c. Exiba todos os valores na ordem inversa à que foram informados, um abaixo do outro;
-d. Calcule e mostre a média aritmética dos valores;
-e. Calcule e mostre a quantidade de valores acima da média calculada;
-f. Calcule e mostre a quantidade de valores abaixo da média calculada;
+    a. Mostre a quantidade de valores que foram lidos;
+    b. Exiba todos os valores na ordem em que foram informados, um ao lado do outro;
+    c. Exiba todos os valores na ordem inversa à que foram informados, um abaixo do outro;
+    d. Calcule e mostre a média aritmética dos valores;
+    e. Calcule e mostre a quantidade de valores acima da média calculada;
+    f. Calcule e mostre a quantidade de valores abaixo da média calculada;
 */
 
 import java.util.ArrayList;
@@ -33,39 +33,38 @@ public class q18 {
             valores.add(valor);
         }
 
-        //a
+        // a
         System.out.println("Quantidade de valores inseridos: " + valores.size());
 
-        //b
+        // b
         System.out.println("--------------------------------------------");
         for (Double numDouble : valores) {
             System.out.print(numDouble + "  ");
         }
-        
-        //c
+
+        // c
         System.out.println("\n--------------------------------------------");
         for (int i = valores.size() - 1; i >= 0; i--) {
             System.out.println(valores.get(i));
         }
 
-        //d
+        // d
         System.out.println("--------------------------------------------");
         double somatorio = 0;
         for (int i = 0; i < valores.size(); i++) {
-            somatorio += valores.get(i); 
+            somatorio += valores.get(i);
         }
 
         double media = somatorio / valores.size();
         System.out.println("A média aritmética é: " + media);
 
-        //e, f
+        // e, f
         System.out.println("--------------------------------------------");
         int valoresAcima = 0, valoresAbaixo = 0;
         for (int i = 0; i < valores.size(); i++) {
             if (valores.get(i) > media) {
                 valoresAcima++;
-            }
-            else if (valores.get(i) < media) {
+            } else if (valores.get(i) < media) {
                 valoresAbaixo++;
             }
         }
@@ -73,6 +72,6 @@ public class q18 {
         System.out.println("Quantidade de valores acima da média: " + valoresAcima);
         System.out.println("--------------------------------------------");
         System.out.println("Quantidade de valores abaixo da média: " + valoresAbaixo);
-        
+
     }
 }

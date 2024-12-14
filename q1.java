@@ -1,12 +1,15 @@
+/*
+ * Faça um programa que peça as 4 notas bimestrais de um estudante e mostre a média aritmética entre elas.
+ */
+
 import java.util.Scanner;
 
 public class q1 {
-    // Faça um programa que peça as 4 notas bimestrais de um estudante e mostre a média aritmética entre elas.
     public static void main(String[] args) {
         Scanner tec = new Scanner(System.in);
 
         float somatorio = 0;
-        for (int i = 1; i<=4; i++) {
+        for (int i = 1; i <= 4; i++) {
             System.out.printf("Digite a %da nota: ", i);
             float nota = tec.nextFloat();
 

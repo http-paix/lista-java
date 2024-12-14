@@ -23,7 +23,7 @@ public class q17 {
         Scanner tec = new Scanner(System.in);
 
         float valor = 0;
-        
+
         while (true) {
             System.out.print("Digite o código do produto: ");
             int cod = validarInt(tec);
@@ -62,14 +62,15 @@ public class q17 {
         }
         System.out.printf("%nValor total do pedido: R$ %.2f", valor);
     }
+
     private static int validarInt(Scanner tec) {
         int num;
         while (true) {
             try {
                 num = tec.nextInt();
-                
+
                 return num;
-                
+
             } catch (Exception e) {
                 System.out.print("Entrada inválida. Digite novamente: ");
                 tec.nextLine();

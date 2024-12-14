@@ -27,20 +27,21 @@ public class q22 {
                 System.out.println("Endereço IP INVÁLIDO.");
             }
             System.out.println("-------------------------------------------");
-        }     
+        }
     }
+
     private static boolean ipValido(String ip) {
         String[] numeros = ip.split("\\.");
 
         if (numeros.length != 4) {
             return false;
         }
-        
+
         for (String string : numeros) {
             try {
                 int numero = Integer.parseInt(string);
 
-                if (numero<0 || numero>255) {
+                if (numero < 0 || numero > 255) {
                     return false;
                 }
             } catch (NumberFormatException e) {

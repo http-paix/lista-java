@@ -14,33 +14,26 @@ public class q16 {
 
         System.out.println("Digite a idade das pessoas. Quando terminar, digite -1.");
 
-        while (idade>=0) {
+        while (idade >= 0) {
             contador++;
             System.out.print("Idade da pessoa " + contador + ": ");
             idade = tec.nextInt();
 
             if (idade < 0) {
+                tec.close();
                 break;
             }
-
             somatorio += idade;
         }
-
-        tec.close();
-
         int media = somatorio / (contador - 1);
 
         System.out.println("Média do grupo: " + media);
         if (media <= 25) {
             System.out.println("Classificação do grupo: JOVEM");
-        }
-        else if (media >25 && media <= 60) {
+        } else if (media > 25 && media <= 60) {
             System.out.println("Classificação do grupo: ADULTO");
-        }
-        else {
+        } else {
             System.out.println("Classificação do grupo: IDOSO");
         }
-        
     }
 }
-

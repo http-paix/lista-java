@@ -11,15 +11,14 @@ public class q20 {
 
         System.out.print("Digite um valor inteiro: ");
         int n = tec.nextInt();
-        
+
         tec.close();
 
-        for (int i = 1; i<=n; i++) {
+        for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print(j + " ");
             }
             System.out.println();
         }
-        
     }
 }

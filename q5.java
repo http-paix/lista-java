@@ -1,8 +1,8 @@
 /*
- Faça um Programa que peça 2 números inteiros e um número real. Calcule e mostre:
-a. O produto do dobro do primeiro com metade do segundo.
-b. A soma do triplo do primeiro com o terceiro.
-c. O terceiro elevado ao cubo.
+Faça um Programa que peça 2 números inteiros e um número real. Calcule e mostre:
+    a. O produto do dobro do primeiro com metade do segundo.
+    b. A soma do triplo do primeiro com o terceiro.
+    c. O terceiro elevado ao cubo.
  */
 
 import java.util.Scanner;
@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class q5 {
     public static void main(String[] args) {
         Scanner tec = new Scanner(System.in);
-        System.out.println();
+
         System.out.print("Digite o primeiro número inteiro: ");
         int int1 = tec.nextInt();
 
@@ -22,15 +22,15 @@ public class q5 {
 
         tec.close();
 
-        //a
-        float a = (2 * int1) * ((float)int2 / 2);
+        // a
+        float a = (2 * int1) * ((float) int2 / 2);
         System.out.println("O produto do dobro do primeiro com metade do segundo é: " + a);
 
-        //b
+        // b
         double b = (int1 * 3) + real;
         System.out.println("O produto do dobro do primeiro com metade do segundo é: " + b);
 
-        //c
+        // c
         double c = Math.pow(real, 3);
         System.out.println("O terceiro elevado ao cubo: " + c);
     }

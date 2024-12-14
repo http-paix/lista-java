@@ -1,6 +1,8 @@
-import java.util.Scanner;
 
-// Faça um programa que peça o raio de um círculo, calcule e mostre sua área.
+/*
+ * Faça um programa que peça o raio de um círculo, calcule e mostre sua área.
+ */
+import java.util.Scanner;
 
 public class q2 {
     public static void main(String[] args) {
